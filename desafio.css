@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&family=Squada+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+    font-family:'Roboto', sans-serif;
+    background-color: #F2890D;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    max-width: 1084px;
+    padding: 153px 0 151px 0;
+}
+
+fieldset{
+    background: white;
+    border: white;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.informacoes{
+    display: flex;
+}
+
+.opcoesJogador {
+    height: 570px;
+    padding: 0px 112.5px 65px 79px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+}
+.opcoesJogador label {
+    align-self: flex-start;
+}
+
+.imagem {
+    height: 200px;
+}
+
+.inputnome {
+    box-sizing: border-box;
+    border: 3px solid #B0A3A3;
+    height: 42px;
+    width: 350px;
+    border-radius: 3px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.selecao {
+    box-sizing: border-box;
+    border-radius: 3px;
+    text-align: center;
+    height: 42px;
+    width: 350px;
+    border: 3px solid #B0A3A3;
+    font-size: 18px;
+}
+
+#txt {
+    font-family: 'Press Start 2P', cursive;
+    color: #000000;
+}
+
+.botaocomecar {
+    background-color: #B0A3A3;
+    border: 3px solid #000000;
+    font-family: 'Press Start 2P', cursive;
+    box-sizing: border-box;
+    width: 200px;
+    height: 42px;
+    border-radius: 20px;
+    color: white;
+}
+
+.olafulano {
+    text-align: center;
+    padding: 111px 57px 61px 32px ;
+    font-size: 25px;
+    margin-top: -60px;
+    font-size: 25px;
+}
+
+
+.botaojogar{
+    font-family: 'Press Start 2P', cursive;
+    align-self: center;
+    background-color:#F2890D;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    width: 200px;
+    height: 42px;
+    border-radius: 20px;
+    color: white;
+}
+
+.ojogo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ojogo input{
+    box-sizing: border-box;
+    border: 3px solid #B0A3A3;
+    height: 42px;
+    width: 350px;
+    border-radius: 3px;
+    align-self: center;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.ojogo label{
+    margin-right: 70px;
+}
+
+legend {
+    font-family: "Squada One";
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 74px;
+    background-color: #1180E7;
+    border-radius: 20px;
+    padding: 40px 50px;
+}
+
+hr {
+    height: 438px;
+    border: 3px solid #B0A3A3;
+    background-color: #B0A3A3;
+    margin-top: 50px;
+}
+
+.numeromaior {
+    font-size: 25px;
+    align-items: center;
+}
+
+.dica {
+    font-weight: bold;
+}
+
+@media (max-width: 428px){
+
+    .body{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .conteudo{
+        margin: 20px;
+    }
+    .fieldset{
+        max-width: 320px;
+    }
+    .informacoes{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .opcoesJogador{
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    #txt{
+        margin-left: 45px;
+    }
+
+    .selecao{
+        width: 300px;
+    }
+
+    hr{
+        display: none;
+    }
+    .inputnome{
+        width: 300px;
+    }
+    .ojogo label{
+        margin:0;
+        align-self: flex-start;
+    }
+    #jogada{
+        width: 300px;
+    }
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Jogo</title>
+    <link rel="stylesheet" href="desafio.css">
+</head>
+
+<body>
+    <main>
+        <fieldset class="conteudo">
+            <legend>OJOGO</legend>
+            <div class="informacoes">
+                <div class="opcoesJogador">
+                    <img class="imagem" src="imagem1.svg">
+                    <label id="txt">Nick:</label>
+                    <input type="text" class="inputnome"><br>
+                    <label id="txt">Intervalo:</label>
+                    <select class="selecao" name="intervalo" id="opcoes">
+                        <option value="opcao1">Opção 1: 1 a 10</option>
+                        <option value="opcao2">Opção 2: 1 a 100</option>
+                        <option value="opcao3">Opção 3: 1 a 200</option>
+                    </select>
+                    <br>
+                    <button class="botaocomecar" type="submit" disabled>COMEÇAR</button>
+                </div>           
+                <hr>
+                <div class="ojogo">
+                    <p class="olafulano"> Olá <b> <span class="fulano">Fulano</span></b>, vamos jogar! <br> De acordo com a opção de intervalo que você escolheu, descubra o número.</p>
+                    <label id="txt">Digite um número:</label>
+                    <input type="text" name="jogada" id="jogada"><br>
+                    <button class="botaojogar" type="submit">JOGAR</button>
+                    <p class = "dica"></p>
+                    <p class="tentativas"></p>
+                </div>
+            </div>
+        </fieldset>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
